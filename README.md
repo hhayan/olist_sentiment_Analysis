@@ -16,7 +16,7 @@ Baseline 대비 Weighted F1 Score 약 3배 향상 (0.19 → 0.61)
     * 액션 태그 자동화: 오분류 유형에 따라 '재라벨링 후보', '전처리 개선', '규칙 보완 후보' 등의 태그를 자동으로 부여하여 후속 조치를 제안합니다.
 * 키워드 분석: 부정 리뷰(Class 0, 1)에서 자주 등장하는 키워드(ex: 'produto', 'recebi', 'veio')를 추출하여 문제점을 파악합니다.
 
-## 아키텍처
+## Model Configuration
 * Base Model: tabularisai/multilingual-sentiment-analysis(BERT based)
 * Tokenizer: AutoTokenizer (max_length: 128)
 * Adapter: LoRA (Target modules: q_lin, v_lin, Rank: 8, Dropout: 0.1)
